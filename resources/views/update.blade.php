@@ -27,7 +27,7 @@
         </ul>
     </nav>
     <body>
-        <h1>Teacher Search Engine</h1>
+        <h1>Update</h1>
         <ul>
             <li>Create Teacher</li>
             <li>Read Teacher</li>
