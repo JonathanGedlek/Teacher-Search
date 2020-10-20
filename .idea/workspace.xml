@@ -7,22 +7,34 @@
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="886dc474-c3fc-4a0b-a8c6-3a8230cc1ac6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/delete.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/read.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/search.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/update.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/welcomecopy.blade.php" afterDir="false" />
+    <list default="true" id="886dc474-c3fc-4a0b-a8c6-3a8230cc1ac6" name="Default Changelist" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/teacherSearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/teacherSearch.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/delete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/read.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/read.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/update.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +47,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/advanced-web/crud-application-JonathanGedlek" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -145,6 +164,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/laravel-frontend-presets/tailwindcss" />
     </include_path>
   </component>
   <component name="ProjectId" id="1j6G643gd5eP8KEAfRbCdURyKdn" />
@@ -180,8 +201,16 @@
       <option name="presentableId" value="Default" />
       <updated>1603116948454</updated>
       <workItem from="1603116949568" duration="1219000" />
-      <workItem from="1603193612693" duration="4738000" />
+      <workItem from="1603193612693" duration="6112000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1603200566802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603200566802</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,11 +221,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="461" y="164" key="SettingsEditor" timestamp="1603195981588">

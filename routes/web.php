@@ -44,3 +44,7 @@ Route::get('update', function () {
 Route::get('delete', function () {
     return view('delete');
 });
+Auth::routes();
+
+Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
