@@ -16,25 +16,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="886dc474-c3fc-4a0b-a8c6-3a8230cc1ac6" name="Default Changelist" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/teacherSearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/teacherSearch.iml" afterDir="false" />
+    <list default="true" id="886dc474-c3fc-4a0b-a8c6-3a8230cc1ac6" name="Default Changelist" comment="20/10/2020">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/delete.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/read.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/read.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +190,8 @@
       <option name="presentableId" value="Default" />
       <updated>1603116948454</updated>
       <workItem from="1603116949568" duration="1219000" />
-      <workItem from="1603193612693" duration="6112000" />
+      <workItem from="1603193612693" duration="11277000" />
+      <workItem from="1603277993098" duration="3712000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1603200566802</created>
@@ -238,10 +228,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="20/10/2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="20/10/2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="461" y="164" key="SettingsEditor" timestamp="1603195981588">
