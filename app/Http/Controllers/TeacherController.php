@@ -7,14 +7,12 @@ use Illuminate\Http\Request;
 
 class TeacherController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        //
+        $teachers = Teacher::all ();
+
+        return view('teachers.index', compact ('teachers'));
     }
 
     /**
@@ -38,15 +36,11 @@ class TeacherController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Teacher  $teacher
-     * @return \Illuminate\Http\Response
-     */
+
     public function show(Teacher $teacher)
     {
-        //
+        dd($teacher);
+        return view ('teacher.show', compact ('teacher'));
     }
 
     /**
