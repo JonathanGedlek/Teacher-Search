@@ -8,6 +8,7 @@
                {{$teacher->name}}
            </h1>
 
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="button" onclick="window.location='{{url("teachers/".$teacher->id."/edit")}}'">Edit {{$teacher->name}}</button>
         </div>
     </main>
 @endsection

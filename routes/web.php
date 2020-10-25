@@ -14,7 +14,12 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/teachers', [TeacherController::class, 'index']);
+
 Route::get('/teachers/{teacher}', [TeacherController::class, 'show']);
+
+Route::get('/teachers/{teacher}/edit', [TeacherController::class, 'edit']);
+
+Route::delete('teachers/{teacher}/delete', [TeacherController::class, 'destroy']);

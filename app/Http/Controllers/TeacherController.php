@@ -39,19 +39,14 @@ class TeacherController extends Controller
 
     public function show(Teacher $teacher)
     {
-        dd($teacher);
-        return view ('teacher.show', compact ('teacher'));
+
+        return view ('teachers.show', compact ('teacher'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Teacher  $teacher
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit(Teacher $teacher)
     {
-        //
+        return view ('teachers.edit', compact ('teacher'));
     }
 
     /**
