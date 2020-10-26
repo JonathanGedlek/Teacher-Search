@@ -11,7 +11,7 @@
             <ul>
                 @foreach($teachers as $t)
                     <li>
-                        <a href="/{{$t-> path}}">{{ $t -> name }}</a>
+                        <a href="{{$t-> path}}">{{ $t -> name }}</a>
                     </li>
                 @endforeach
             </ul>

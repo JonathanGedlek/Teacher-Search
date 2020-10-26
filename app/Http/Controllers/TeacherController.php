@@ -52,7 +52,8 @@ class TeacherController extends Controller
 
     public function update(Request $request, Teacher $teacher)
     {
-        $attributes = request();
+        $attributes = request() -> all ('name', 'email', 'phone', 'title');
+
         $teacher -> update ($attributes);
 
         return redirect () -> route ('index');

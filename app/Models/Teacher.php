@@ -15,6 +15,6 @@ class Teacher extends Model
     }
 
     public function path (){
-        return 'teachers/' . $this -> id;
+        return '/teachers/' . $this -> id;
     }
 }
