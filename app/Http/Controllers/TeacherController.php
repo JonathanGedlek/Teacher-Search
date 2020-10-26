@@ -15,25 +15,25 @@ class TeacherController extends Controller
         return view('teachers.index', compact ('teachers'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
-        //
+        return view('teachers.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
     {
-        //
+        $attributes = $request -> all (
+            'name',
+            'email',
+            'phone',
+            'title'
+        );
+
+        $teacher = Teacher::create ($attributes);
+
+        return redirect ($teacher->path);
     }
 
 
@@ -49,26 +49,20 @@ class TeacherController extends Controller
         return view ('teachers.edit', compact ('teacher'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Teacher  $teacher
-     * @return \Illuminate\Http\Response
-     */
+
     public function update(Request $request, Teacher $teacher)
     {
-        //
+        $attributes = request();
+        $teacher -> update ($attributes);
+
+        return redirect () -> route ('index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Teacher  $teacher
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy(Teacher $teacher)
     {
-        //
+        $teacher -> delete();
+
+        return redirect () -> route ('index');
     }
 }

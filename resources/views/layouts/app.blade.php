@@ -17,7 +17,7 @@
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
     <div id="app">
-        <header class="bg-blue-900 py-6">
+        <header class="bg-green-900 py-6">
             <div class="container mx-auto flex justify-between items-center px-6">
                 <div>
                     <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
@@ -45,7 +45,12 @@
             </div>
         </header>
 
-        @yield('content')
+        <div class="container mx-auto">
+            @yield('header')
+            @yield('content')
+        </div>
+
+
     </div>
 </body>
 </html>
