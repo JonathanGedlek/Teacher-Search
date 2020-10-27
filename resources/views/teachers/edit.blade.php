@@ -13,7 +13,7 @@
                 </label>
 
                 <input class ="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 @error ('name') border border-red-500 @enderror"
-                       type="text" name="name" data-lpignore="true" autocomplete="off" placeholder="{{$teacher->name}}"/>
+                       type="text" name="name" data-lpignore="true" autocomplete="off" value="{{$teacher->name}}"/>
 
                 @error ('name')
                 <div class ="alert-message">
@@ -30,7 +30,7 @@
                 </label>
 
                 <input class ="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 @error ('title') border border-red-500 @enderror"
-                       type="text" name="title" data-lpignore="true" autocomplete="off" placeholder="{{$teacher->title}}"/>
+                       type="text" name="title" data-lpignore="true" autocomplete="off" value="{{$teacher->title}}"/>
 
                 @error ('title')
                 <div class ="alert-message">
@@ -47,7 +47,7 @@
                 </label>
 
                 <input class ="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 @error ('email') border border-red-500 @enderror"
-                       type="text" name="email" data-lpignore="true" autocomplete="off" placeholder="{{$teacher->email}}"/>
+                       type="text" name="email" data-lpignore="true" autocomplete="off" value="{{$teacher->email}}"/>
 
                 @error ('email')
                 <div class ="alert-message">
@@ -64,7 +64,7 @@
                 </label>
 
                 <input class ="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 @error ('phone') border border-red-500 @enderror"
-                       type="text" name="phone" data-lpignore="true"  autocomplete="off" placeholder="{{$teacher->phone}}"/>
+                       type="text" name="phone" data-lpignore="true"  autocomplete="off" value="{{$teacher->phone}}"/>
 
                 @error ('phone')
                 <div class ="alert-message">
@@ -76,6 +76,10 @@
 
         <button class="flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-2 rounded" type="submit">
             Update Teacher
+        </button>
+
+        <button class="flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-2 rounded" type="button">
+           <a href="/teachers">Cancel</a>
         </button>
 
     </form>

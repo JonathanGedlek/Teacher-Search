@@ -1,22 +1,32 @@
 @extends('layouts.app')
 
+@section ('header')
+    <div class="flex mt-5">
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2" type="button" onclick="window.location='{{url("/create")}}'">
+            Create Teacher
+        </button>
+
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded pl-10 pr-10" type="button" onclick="window.location='{{url("/")}}'">
+            Home
+        </button>
+    </div>
+
+@endsection
+
 @section('content')
-    <main class="sm:container sm:mx-auto sm:mt-10">
-        <div class="w-full sm:px-6">
 
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="button" onclick="window.location='{{url("/create")}}'">
-                Create Teacher
-            </button>
+            <div class="flex flex-wrap">
 
-            <ul>
                 @foreach($teachers as $t)
-                    <li>
-                        <a href="{{$t-> path}}">{{ $t -> name }}</a>
-                    </li>
+
+                            <div class="w-1/4 pr-2">
+                                @include ('_teacher')
+                            </div>
+
+
                 @endforeach
-            </ul>
+            </div>
 
+            {{ $teachers -> links () }}
 
-        </div>
-    </main>
 @endsection

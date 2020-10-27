@@ -8,11 +8,13 @@ use Illuminate\Http\Request;
 class TeacherController extends Controller
 {
 
+    const TEACHERS_PER_PAGE = 9;
+
     public function index()
     {
-        $teachers = Teacher::all ();
+        $teachers = Teacher::query() ->orderBy('name', 'asc') -> paginate (self::TEACHERS_PER_PAGE);
 
-        return view('teachers.index', compact ('teachers'));
+        return view('teachers.index', ['teachers'=> $teachers]);
     }
 
 
