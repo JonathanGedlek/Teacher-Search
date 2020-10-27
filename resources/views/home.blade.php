@@ -16,10 +16,14 @@
                 Dashboard
             </header>
 
-            <div class="w-full p-6">
-                <p class="text-gray-700">
-                    You are logged in!
-                </p>
+            <div class=" mx-auto flex content-around flex-wrap h-48 ">
+                <button class="mr-8 bg-green-500 hover:bg-green-700 text-white font-bold py-5 px-4 rounded" type="button" onclick="window.location='{{url("/teachers")}}'">
+                    View Teacher List
+                </button>
+
+                <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="button" onclick="window.location='{{url("/create")}}'">
+                    Create Teacher
+                </button>
             </div>
         </section>
     </div>

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('Teacher Search Engine', 'Teacher Search Engine'),
+    'name' => env('Broadworth High', 'Broadworth High'),
 
     /*
     |--------------------------------------------------------------------------
