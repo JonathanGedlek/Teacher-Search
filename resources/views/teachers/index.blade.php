@@ -15,7 +15,7 @@
 
 @section('content')
 
-            <div class="flex flex-wrap">
+            <div class="flex flex-wrap mt-3">
 
                 @foreach($teachers as $t)
 

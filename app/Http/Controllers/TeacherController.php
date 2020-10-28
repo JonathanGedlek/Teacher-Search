@@ -41,8 +41,14 @@ class TeacherController extends Controller
 
     public function show(Teacher $teacher)
     {
+        $created = ($teacher->created_at);
+        $employed = date('D d M Y', strtotime($created));
 
-        return view ('teachers.show', compact ('teacher'));
+        $updated = ($teacher->updated_at);
+
+
+        return view ('teachers.show', compact ('teacher', 'employed', 'updated'));
+
     }
 
 
@@ -54,6 +60,7 @@ class TeacherController extends Controller
 
     public function update(Request $request, Teacher $teacher)
     {
+
         $attributes = request() -> all ('name', 'email', 'phone', 'title');
 
         $teacher -> update ($attributes);

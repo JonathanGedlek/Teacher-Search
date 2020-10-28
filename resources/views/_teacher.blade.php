@@ -15,7 +15,7 @@
             </div>
         </div>
         <div>
-            <img src="{{ asset ('images/logo-hirez.png') }}" alt="Broadworth logo" width="70" height="70">
+            <img src="{{ asset ('images/logo-hirez.png') }}" alt="Broadworth logo" width="70">
         </div>
     </div>
 </div>

@@ -20,7 +20,9 @@ class CreateTeachersTable extends Migration
             $table->text('email');
             $table->text('phone');
             $table->text('title');
+            $table->text('image');
             $table->timestamps();
+
         });
     }
 

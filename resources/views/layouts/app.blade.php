@@ -70,6 +70,7 @@
         <div class="container mx-auto">
             @yield('header')
             @yield('content')
+            @yield('footer')
         </div>
 
 

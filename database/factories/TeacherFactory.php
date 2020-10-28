@@ -31,6 +31,7 @@ class TeacherFactory extends Factory
             'email' => $email,
             'phone' => $this->faker->phoneNumber,
             'title'=> $this->faker->title($gender),
+            'image'=> 'NULL'
         ];
     }
 }
