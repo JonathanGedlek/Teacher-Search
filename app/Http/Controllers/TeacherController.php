@@ -60,10 +60,17 @@ class TeacherController extends Controller
 
     public function update(Request $request, Teacher $teacher)
     {
+        $imageName= $request->image->getClientOriginalName();
 
-        $attributes = request() -> all ('name', 'email', 'phone', 'title');
+        $teacher->name = request('name');
+        $teacher->email = request('email');
+        $teacher->phone = request('phone');
+        $teacher->title = request('title');
+        $teacher->image = $imageName;
 
-        $teacher -> update ($attributes);
+        $request->image->move(public_path('images/profiles'), $imageName);
+
+        $teacher -> save();
 
         return redirect () -> route ('index');
     }

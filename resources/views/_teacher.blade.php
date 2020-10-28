@@ -15,7 +15,7 @@
             </div>
         </div>
         <div>
-            <img src="{{ asset ('images/logo-hirez.png') }}" alt="Broadworth logo" width="70">
+            <img src="{{ asset ('images/profiles/'.$t->image)}}" onerror="this.src='{{ asset ('images/logo-hirez.png') }}'" alt="Broadworth logo" width="70">
         </div>
     </div>
 </div>

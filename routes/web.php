@@ -26,6 +26,6 @@ Route::get('/create', [TeacherController::class, 'create']);
 Route::post('teachers',[TeacherController::class, 'store']);
 
 Route::get('/teachers/{teacher}/edit', [TeacherController::class, 'edit']);
-Route::patch ('/teachers/{teacher}', [TeacherController::class, 'update']);
+Route::post('/teachers/{teacher}', [TeacherController::class, 'update']);
 
 

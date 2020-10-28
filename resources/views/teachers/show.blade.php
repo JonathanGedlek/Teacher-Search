@@ -20,7 +20,7 @@
 
             </div>
         <div>
-            <img src="{{ asset ('images/logo-hirez.png') }}" onerror="this.src='{{ asset ('images/logo-hirez.png') }}'" width="300" />
+            <img src="{{ asset ('images/profiles/'.$teacher->image)}}" onerror="this.src='{{ asset ('images/logo-hirez.png') }}'" width="300" />
         </div>
         </main>
         <div class = "ml-3 mb-3">

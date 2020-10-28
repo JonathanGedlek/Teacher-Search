@@ -17,15 +17,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="886dc474-c3fc-4a0b-a8c6-3a8230cc1ac6" name="Default Changelist" comment="20/10/2020">
+      <change afterPath="$PROJECT_DIR$/resources/views/teachers/imageUpload.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TeacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TeacherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Teacher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/TeacherFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TeacherFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_20_144532_create_teachers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_20_144532_create_teachers_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/_teacher.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_teacher.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teachers/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teachers/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/teachers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teachers/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/teachers/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teachers/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +169,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gedders\xampp\htdocs\teacherSearch\resources\views\teachers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Gedders\xampp\htdocs\teacherSearch\resources\views" />
     </key>
@@ -195,7 +196,7 @@
       <workItem from="1603626935244" duration="1558000" />
       <workItem from="1603715255061" duration="11639000" />
       <workItem from="1603801751952" duration="15034000" />
-      <workItem from="1603890911200" duration="5862000" />
+      <workItem from="1603890911200" duration="12280000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1603200566802</created>
@@ -240,6 +241,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="20/10/2020" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="198" key="#Inspections" timestamp="1603900734336">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="586" y="198" key="#Inspections/0.0.1920.1040/-1855.-271.1855.1080/1920.0.1920.1040@0.0.1920.1040" timestamp="1603900734336" />
+    <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603901304540">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1855.-271.1855.1080/1920.0.1920.1040@0.0.1920.1040" timestamp="1603901304540" />
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603897595579">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1855.-271.1855.1080/1920.0.1920.1040@0.0.1920.1040" timestamp="1603897595579" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1603195981588">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <form class="w-full max-w-lg" method="post" action="{{$teacher->path}}">
+    <form class="w-full max-w-lg" method="post" action="{{$teacher->path}}" enctype="multipart/form-data">
 
-        @method ('PATCH')
+
         @csrf
 
         <div class="flex flex-wrap">
@@ -73,6 +73,15 @@
                 @enderror
             </div>
         </div>
+        <div class="row">
+
+            <div class="col-md-6">
+                <input type="file" name="image" class="form-control">
+            </div>
+
+
+
+        </div>
 
         <button class="flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-2 rounded" type="submit">
             Update Teacher
@@ -81,6 +90,5 @@
         <button class="flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-2 rounded" type="button">
            <a href="/teachers">Cancel</a>
         </button>
-
     </form>
 @endsection
