@@ -22,11 +22,23 @@
                             <div class="w-1/4 pr-2">
                                 @include ('_teacher')
                             </div>
-
-
                 @endforeach
             </div>
 
             {{ $teachers -> links () }}
+    <div>
+        <form action="/teachers/search" method="post" role="search">
+            @csrf
+            <div>
+                <input type="text" class="form-control" name="q"
+                       placeholder="Search Teachers" autocomplete="off">
+
+                    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-3 rounded" type="submit">
+                        Search
+                    </button>
+
+            </div>
+        </form>
+    </div>
 
 @endsection

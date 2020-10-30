@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Teacher;
 use Illuminate\Http\Request;
 
+use Symfony\Component\Console\Input\Input;
+
+
 class TeacherController extends Controller
 {
 
@@ -21,6 +24,23 @@ class TeacherController extends Controller
     public function create()
     {
         return view('teachers.create');
+    }
+
+
+    public function search(Request $request)
+    {
+        $q = request('q');
+        if($q != ''){
+            $teachers = Teacher::where('name', 'LIKE', '%'.$q. '%' )
+                ->orWhere('email', 'LIKE', '%'.$q. '%')
+                ->paginate(9);
+
+
+            return view('teachers.index', ['teachers'=> $teachers]);
+        }
+        else{
+            return redirect('/teachers');
+        }
     }
 
 
@@ -64,15 +84,19 @@ class TeacherController extends Controller
 
     public function update(Request $request, Teacher $teacher)
     {
-        $imageName= $request->image->getClientOriginalName();
+        if ($request->image !=null){
+            $imageName= $request->image->getClientOriginalName();
+            $request->image->move(public_path('images/profiles'), $imageName);
+            $teacher->image = $imageName;
+        }
 
         $teacher->name = request('name');
         $teacher->email = request('email');
         $teacher->phone = request('phone');
         $teacher->title = request('title');
-        $teacher->image = $imageName;
 
-        $request->image->move(public_path('images/profiles'), $imageName);
+
+
 
         $teacher -> save();
 
@@ -86,4 +110,7 @@ class TeacherController extends Controller
 
         return redirect () -> route ('index');
     }
+
+
+
 }
