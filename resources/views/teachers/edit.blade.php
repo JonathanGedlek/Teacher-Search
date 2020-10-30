@@ -1,8 +1,11 @@
 @extends('layouts.app')
 
-@section('content')
-    <form class="w-full max-w-lg" method="post" action="{{$teacher->path}}" enctype="multipart/form-data">
+@section('header')
 
+@endsection
+
+@section('content')
+    <form class="w-full max-w-lg mt-10" method="post" action="{{$teacher->path}}" enctype="multipart/form-data">
 
         @csrf
 
@@ -25,7 +28,7 @@
 
         <div class="flex flex-wrap">
             <div class="w-full">
-                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="title">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 mt-3" for="title">
                     Title
                 </label>
 
@@ -42,7 +45,7 @@
 
         <div class="flex flex-wrap">
             <div class="w-full">
-                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 mt-3" for="email">
                     Email
                 </label>
 
@@ -59,7 +62,7 @@
 
         <div class="flex flex-wrap">
             <div class="w-full">
-                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="phone">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 mt-3" for="phone">
                     Phone
                 </label>
 
@@ -73,8 +76,16 @@
                 @enderror
             </div>
         </div>
-        <div class="row">
 
+        <div>
+            <p class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 mt-3">Current Image </p>
+            <img src="{{ asset ('images/profiles/'.$teacher->image)}}" onerror="this.src='{{ asset ('images/logo-hirez.png') }}'" width="200" />
+        </div>
+
+        <div class="row">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 mt-3" for="image">
+                New Image
+            </label>
             <div class="col-md-6">
                 <input type="file" name="image" class="form-control">
             </div>
@@ -82,13 +93,15 @@
 
 
         </div>
+        <div class="mt-3">
+            <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="submit">
+                Update Teacher
+            </button>
 
-        <button class="flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-2 rounded" type="submit">
-            Update Teacher
-        </button>
+            <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="button">
+                <a href="/teachers">Cancel</a>
+            </button>
+        </div>
 
-        <button class="flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-2 rounded" type="button">
-           <a href="/teachers">Cancel</a>
-        </button>
     </form>
 @endsection

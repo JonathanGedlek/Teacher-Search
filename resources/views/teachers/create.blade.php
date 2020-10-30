@@ -74,8 +74,14 @@
         </div>
     </div>
 
-    <button class="flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-2 rounded" type="submit">
+    <div>
+
+    </div>
+    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="submit">
         Create Teacher
+    </button>
+    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="button">
+        <a href="/teachers">Cancel</a>
     </button>
 
 </form>
