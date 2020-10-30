@@ -89,10 +89,8 @@
             <div class="col-md-6">
                 <input type="file" name="image" class="form-control">
             </div>
-
-
-
         </div>
+
         <div class="mt-3">
             <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="submit">
                 Update Teacher

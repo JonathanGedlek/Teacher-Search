@@ -26,14 +26,18 @@ class TeacherController extends Controller
 
     public function store(Request $request)
     {
-        $attributes = $request -> all (
-            'name',
-            'email',
-            'phone',
-            'title'
-        );
+        $imageName= $request->image->getClientOriginalName();
 
-        $teacher = Teacher::create ($attributes);
+        $teacher = new Teacher();
+
+        $teacher->name = request('name');
+        $teacher->email = request('email');
+        $teacher->phone = request('phone');
+        $teacher->title = request('title');
+        $teacher->image = $imageName;
+        $teacher->save();
+
+        $request->image->move(public_path('images/profiles'), $imageName);
 
         return redirect ($teacher->path);
     }
