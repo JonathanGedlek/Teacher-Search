@@ -18,9 +18,9 @@
   <component name="ChangeListManager">
     <list default="true" id="886dc474-c3fc-4a0b-a8c6-3a8230cc1ac6" name="Default Changelist" comment="20/10/2020">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TeacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TeacherController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/teachers/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teachers/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +198,7 @@
       <workItem from="1604017868995" duration="825000" />
       <workItem from="1604062139176" duration="8862000" />
       <workItem from="1604169622906" duration="506000" />
-      <workItem from="1604230438264" duration="835000" />
+      <workItem from="1604230438264" duration="2516000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1603200566802</created>

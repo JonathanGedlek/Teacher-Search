@@ -44,6 +44,13 @@ class TeacherController extends Controller
 
     public function store(Request $request)
     {
+        request() -> validate ([
+            'name' => 'required|min:2|max:32',
+            'email'=> 'required|email|unique:teachers',
+            'phone' => 'required|numeric|min:6',
+            'title' => 'required|'
+        ]);
+
         $imageName= $request->image->getClientOriginalName();
 
         $teacher = new Teacher();
@@ -82,6 +89,13 @@ class TeacherController extends Controller
 
     public function update(Request $request, Teacher $teacher)
     {
+        request() -> validate ([
+            'name' => 'required|min:2|max:32',
+            'email'=> 'required|email|unique:teachers',
+            'phone' => 'required|numeric|min:6',
+            'title' => 'required|'
+        ]);
+
         if ($request->image !=null){
             $imageName= $request->image->getClientOriginalName();
             $request->image->move(public_path('images/profiles'), $imageName);

@@ -36,7 +36,9 @@
                     <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-3 rounded" type="submit">
                         Search
                     </button>
-
+                <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-3 rounded" type="button">
+                    <a href="/teachers">clear</a>
+                </button>
             </div>
         </form>
     </div>
