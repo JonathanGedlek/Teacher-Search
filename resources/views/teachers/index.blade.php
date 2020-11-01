@@ -27,7 +27,7 @@
 
             {{ $teachers -> links () }}
     <div>
-        <form action="/teachers/search" method="post" role="search">
+        <form action="/teachers/search" method="get" role="search">
             @csrf
             <div>
                 <input type="text" class="form-control" name="q"

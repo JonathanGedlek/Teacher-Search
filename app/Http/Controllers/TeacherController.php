@@ -31,13 +31,11 @@ class TeacherController extends Controller
     {
         $q = request('q');
         if($q != ''){
-            $teachers = Teacher::where('name', 'LIKE', '%'.$q. '%' )
-                ->orWhere('email', 'LIKE', '%'.$q. '%')
-                ->paginate(9);
-
+            $teachers = Teacher::where('name', 'LIKE', '%'.$q. '%' ) -> paginate(self::TEACHERS_PER_PAGE);
 
             return view('teachers.index', ['teachers'=> $teachers]);
         }
+
         else{
             return redirect('/teachers');
         }

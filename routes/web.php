@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
+
 Route::get('/home', [HomeController::class, 'index'])->name('index');
 
 
@@ -16,7 +17,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('index');
 
 Auth::routes();
 
-Route::post('/teachers/search',[TeacherController::class, 'search']);
+Route::get('/teachers/search',[TeacherController::class, 'search']);
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/teachers', [TeacherController::class, 'index']);
