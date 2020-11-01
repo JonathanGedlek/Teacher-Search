@@ -18,10 +18,8 @@
   <component name="ChangeListManager">
     <list default="true" id="886dc474-c3fc-4a0b-a8c6-3a8230cc1ac6" name="Default Changelist" comment="20/10/2020">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TeacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TeacherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teachers/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teachers/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teachers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teachers/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teachers/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teachers/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/teachers/search.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +197,7 @@
       <workItem from="1604017868995" duration="825000" />
       <workItem from="1604062139176" duration="8862000" />
       <workItem from="1604169622906" duration="506000" />
-      <workItem from="1604230438264" duration="5525000" />
+      <workItem from="1604230438264" duration="9609000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1603200566802</created>
@@ -248,6 +246,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="586" y="198" key="#Inspections/0.0.1920.1040/-1855.-271.1855.1080/1920.0.1920.1040@0.0.1920.1040" timestamp="1603900734336" />
+    <state x="757" y="309" key="#Web_Browsers" timestamp="1604243097049">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="757" y="309" key="#Web_Browsers/0.0.1920.1040/-1855.-271.1855.1080/1920.0.1920.1040@0.0.1920.1040" timestamp="1604243097049" />
     <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603901304540">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -256,6 +258,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1855.-271.1855.1080/1920.0.1920.1040@0.0.1920.1040" timestamp="1603897595579" />
+    <state x="753" y="240" key="RollbackChangesDialog" timestamp="1604241720401">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="240" key="RollbackChangesDialog/0.0.1920.1040/-1855.-271.1855.1080/1920.0.1920.1040@0.0.1920.1040" timestamp="1604241720401" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1603195981588">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
