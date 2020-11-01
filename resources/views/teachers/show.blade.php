@@ -11,7 +11,7 @@
         <main class="sm:container sm:mx-auto sm:mt-5 sm:mb-5 sm:px-6 flex">
             <div class="w-full">
                 <h1 class="text-2xl font-bold">
-                    {{$teacher->title . $teacher->name}}
+                    {{$teacher->title . " ".$teacher->name}}
                 </h1>
                 <div class="mt-5">
                     <p>Email: {{$teacher->email}}</p>

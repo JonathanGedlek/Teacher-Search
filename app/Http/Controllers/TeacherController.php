@@ -26,7 +26,7 @@ class TeacherController extends Controller
         return view('teachers.create');
     }
 
-
+    //works similar to the index function but does so with a filter given by user in the search field
     public function search(Request $request)
     {
         $q = request('q');
@@ -51,18 +51,28 @@ class TeacherController extends Controller
             'title' => 'required|'
         ]);
 
-        $imageName= $request->image->getClientOriginalName();
 
+
+        //created a teacher object and assigned the request parameters to them manually.
+        //This is so the direct name of the image is stored in the database.
         $teacher = new Teacher();
+
+        if ($request->image !=null){
+            //grabs the name of the file that the user has uploaded
+            $imageName= $request->image->getClientOriginalName();
+            //puts the uploaded image within a profile folder
+            $request->image->move(public_path('images/profiles'), $imageName);
+            $teacher->image = $imageName;
+        }
 
         $teacher->name = request('name');
         $teacher->email = request('email');
         $teacher->phone = request('phone');
         $teacher->title = request('title');
-        $teacher->image = $imageName;
+
         $teacher->save();
 
-        $request->image->move(public_path('images/profiles'), $imageName);
+
 
         return redirect ($teacher->path);
     }
@@ -89,12 +99,23 @@ class TeacherController extends Controller
 
     public function update(Request $request, Teacher $teacher)
     {
-        request() -> validate ([
-            'name' => 'required|min:2|max:32',
-            'email'=> 'required|email|unique:teachers',
-            'phone' => 'required|numeric|min:6',
-            'title' => 'required|'
-        ]);
+        if($request->email!= $teacher->email){
+            request() -> validate ([
+                'name' => 'required|min:2|max:32',
+                'email'=> 'required|email|unique:teachers',
+                'phone' => 'required|numeric|min:6',
+                'title' => 'required|'
+            ]);
+        }
+        else{
+            request() -> validate ([
+                'name' => 'required|min:2|max:32',
+                'phone' => 'required|numeric|min:6',
+                'title' => 'required|'
+            ]);
+        }
+
+
 
         if ($request->image !=null){
             $imageName= $request->image->getClientOriginalName();
@@ -106,9 +127,6 @@ class TeacherController extends Controller
         $teacher->email = request('email');
         $teacher->phone = request('phone');
         $teacher->title = request('title');
-
-
-
 
         $teacher -> save();
 
